@@ -1,4 +1,4 @@
-package com.example.levon.medhelper.Adapters;
+package com.example.l.medhelper.Adapters;
 
 import android.Manifest;
 import android.content.Context;
@@ -13,8 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.levon.medhelper.Models.NumbersModel;
-import com.example.levon.medhelper.R;
+import com.example.l.medhelper.Models.NumbersModel;
+import com.example.l.medhelper.R;
 
 import java.util.List;
 

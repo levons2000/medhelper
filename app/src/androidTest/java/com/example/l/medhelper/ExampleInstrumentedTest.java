@@ -1,4 +1,4 @@
-package com.example.levon.medhelper;
+package com.example.l.medhelper;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

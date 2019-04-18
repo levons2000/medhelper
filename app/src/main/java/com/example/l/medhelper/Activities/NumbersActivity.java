@@ -1,13 +1,13 @@
-package com.example.levon.medhelper.Activities;
+package com.example.l.medhelper.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.levon.medhelper.Adapters.NumbersRecyclerViewAdapter;
-import com.example.levon.medhelper.Models.NumbersModel;
-import com.example.levon.medhelper.R;
+import com.example.l.medhelper.Adapters.NumbersRecyclerViewAdapter;
+import com.example.l.medhelper.Models.NumbersModel;
+import com.example.l.medhelper.R;
 
 import java.util.ArrayList;
 import java.util.List;

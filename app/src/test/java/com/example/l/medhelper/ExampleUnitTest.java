@@ -1,4 +1,4 @@
-package com.example.levon.medhelper;
+package com.example.l.medhelper;
 
 import org.junit.Test;
 

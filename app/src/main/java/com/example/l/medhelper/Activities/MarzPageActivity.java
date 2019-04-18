@@ -1,13 +1,14 @@
-package com.example.levon.medhelper.Activities;
+package com.example.l.medhelper.Activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.levon.medhelper.Adapters.MarzRecyclerViewAdapter;
-import com.example.levon.medhelper.Models.ModelOfMarz;
-import com.example.levon.medhelper.R;
+import com.example.l.medhelper.Adapters.MarzRecyclerViewAdapter;
+import com.example.l.medhelper.Models.ModelOfMarz;
+import com.example.l.medhelper.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,5 +42,14 @@ public class MarzPageActivity extends AppCompatActivity {
         listOfMarz.add(new ModelOfMarz("Tavush"));
         listOfMarz.add(new ModelOfMarz("Vayots Dzor"));
         listOfMarz.add(new ModelOfMarz("Yerevan"));
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+        homeIntent.addCategory( Intent.CATEGORY_HOME );
+        homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(homeIntent);
     }
 }

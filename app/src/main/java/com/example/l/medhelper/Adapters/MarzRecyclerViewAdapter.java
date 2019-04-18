@@ -1,4 +1,4 @@
-package com.example.levon.medhelper.Adapters;
+package com.example.l.medhelper.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,9 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.levon.medhelper.Activities.NumbersActivity;
-import com.example.levon.medhelper.Models.ModelOfMarz;
-import com.example.levon.medhelper.R;
+import com.example.l.medhelper.Activities.NumbersActivity;
+import com.example.l.medhelper.Models.ModelOfMarz;
+import com.example.l.medhelper.R;
 
 import java.util.List;
 

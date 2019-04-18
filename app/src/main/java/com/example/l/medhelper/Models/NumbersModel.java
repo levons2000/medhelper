@@ -1,4 +1,4 @@
-package com.example.levon.medhelper.Models;
+package com.example.l.medhelper.Models;
 
 public class NumbersModel {
     private String nameOfHospital;

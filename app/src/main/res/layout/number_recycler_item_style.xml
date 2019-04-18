@@ -13,8 +13,10 @@
             android:background="#5ab6f7">
 
             <TextView
-                android:layout_width="300dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/call_to_hospital"
+                android:layout_alignParentStart="true"
                 android:id="@+id/name_of_hospital"
                 android:text="Blablsada"
                 android:textStyle="bold"
@@ -23,8 +25,10 @@
                 android:textSize="22sp"/>
 
             <TextView
-                android:layout_width="300dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/call_to_hospital"
+                android:layout_alignParentStart="true"
                 android:id="@+id/hasce_of_hospital"
                 android:layout_margin="5dp"
                 android:textSize="18sp"
@@ -34,8 +38,10 @@
                 android:text="dsadsadsa"/>
 
             <TextView
-                android:layout_width="300dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/call_to_hospital"
+                android:layout_alignParentStart="true"
                 android:id="@+id/number_of_hospital"
                 android:layout_marginLeft= "5dp"
                 android:textSize="18sp"

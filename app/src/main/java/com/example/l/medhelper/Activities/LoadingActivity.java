@@ -1,15 +1,18 @@
-package com.example.levon.medhelper.Activities;
+package com.example.l.medhelper.Activities;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.levon.medhelper.R;
+import com.example.l.medhelper.R;
 
 public class LoadingActivity extends AppCompatActivity {
 
@@ -24,9 +27,16 @@ public class LoadingActivity extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(LoadingActivity.this, MarzPageActivity.class);
-                    startActivity(intent);
-                    finish();
+                    SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(LoadingActivity.this);
+                    if (sharedPref.getString("username", null) != null) {
+                        Intent intent = new Intent(LoadingActivity.this, MarzPageActivity.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Intent intent = new Intent(LoadingActivity.this, InfoActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
             }, 2000);
         }
@@ -38,9 +48,16 @@ public class LoadingActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(LoadingActivity.this, MarzPageActivity.class);
-                startActivity(intent);
-                finish();
+                SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(LoadingActivity.this);
+                if (sharedPref.getString("username", null) != null) {
+                    Intent intent = new Intent(LoadingActivity.this, MarzPageActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Intent intent = new Intent(LoadingActivity.this, InfoActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         }, 2000);
     }
